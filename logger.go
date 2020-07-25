@@ -16,8 +16,8 @@ type logger struct {
 type offlogger struct{}
 
 func (t *logger) Log(a ...interface{}) {
-	t.writer.Write([]byte(fmt.Sprint(a...)))
-	t.writer.Write([]byte("\n"))
+	_, _ = t.writer.Write([]byte(fmt.Sprint(a...)))
+	_, _ = t.writer.Write([]byte("\n"))
 }
 
 func (t *offlogger) Log(a ...interface{}) {}
