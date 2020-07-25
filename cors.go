@@ -179,7 +179,7 @@ func (c *CorsHandler) areHeadersAllowed(headers []string) bool {
 	for _, header := range headers {
 		found := false
 		for _, h := range c.allowedHeaders {
-			if h == header {
+			if strings.ToLower(h) == strings.ToLower(header) {
 				found = true
 			}
 		}

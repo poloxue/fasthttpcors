@@ -3,7 +3,7 @@ package main
 import (
 	"log"
 
-	cors "github.com/AdhityaRamadhanus/fasthttpcors"
+	cors "github.com/poloxue/fasthttpcors"
 	"github.com/valyala/fasthttp"
 )
 
